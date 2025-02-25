@@ -322,11 +322,11 @@ a.linkToOld:hover {
 }
 
 /* Hover effect for hexagon */
+/* Modified clip path so it transitions to square rather than vanishing, reduced scaling value - Trapps (25/02) */
 .profile-hex:hover .hexagon {
-    transform: scale(1.1);  /* Slightly increase the size without affecting layout */
-    transition: transform 0.3s ease;  /* Smooth transition for scaling */
-    clip-path: none;  /* Remove hexagonal shape and make it a square */
-  
+    transform: scale(1.05); /* Slightly increase the size without affecting layout */
+    transition: clip-path 0.3s ease, transform 0.3s ease;  /* Smooth transition for scaling */
+    clip-path: polygon(0% 50%, 0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);  /* Remove hexagonal shape and make it a square */
 }
 
 /* Show profile info on hover */
@@ -346,7 +346,7 @@ a.linkToOld:hover {
 .profile-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 150px; /* Increased from 100 to 150 to create bigger gaps between hexagons - Trapps (25/02) */
 }
 
 .teams-section .row {
