@@ -19,10 +19,13 @@ body {
 }
 
 
+
 .navbar{
     background-color: var(--background-colour);
     color: white;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -31,14 +34,15 @@ body {
 
 .jumbotron {
     position: relative;
-    margin: 0;
-    padding: 0;
     background-image: url("assets/temp-background.png");
     background-size: cover;
     height: 650px;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
 }
 
 .jumbotron-text{
@@ -259,6 +263,8 @@ a.linkToOld:hover {
     font-size: 3vw;
     text-align: center;
     padding-top: 10px;
+   margin: 0 auto;
+    
     
 }
 
@@ -274,7 +280,7 @@ a.linkToOld:hover {
     overflow: hidden;
     display: flex;
     align-items: center; 
-    justify-content: center
+    justify-content: center;
 
 }
 
@@ -342,50 +348,29 @@ a.linkToOld:hover {
 }
 
 
-
 .profile-row {
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
 }
 
-.teams-section .row {
-    margin-left: 150px; /* Adjust percentage as needed */
-}
 
+.individualTeam{
+    display: flex;
+    flex-wrap: wrap; /* Allows hexagons to wrap into rows */
+    justify-content: center; /* Aligns the pattern to the center horizontally */
+    gap: 10px; 
+    transform: translateX(60px);
+}
 .clickable-hex{
     position: relative; /* Needed to position hexagons correctly */
     width: 100%;
     height: auto;
+    display: flex;
 }
 
 
-/* First row of hexagons */
-.clickable-hex .col-4:nth-child(1) {
-    top: 0;
-    left: 70;
-}
 
-.clickable-hex .col-4:nth-child(2) {
-    top: 0;
-    left: 3vw; /* Adjust to create space between hexagons */
-}
-
-.clickable-hex .col-4:nth-child(3) {
-    top: 0;
-    left: 16vw;
-}
-
-/* Second row of hexagons, offset vertically */
-.clickable-hex .col-4:nth-child(4) {
-    top: 50%; /* Offset by 50% (or adjust to your liking) */
-    left: 5vw; /* Adjust for the staggered effect */
-}
-
-.clickable-hex .col-4:nth-child(5) {
-    top: 50%; /* Offset vertically */
-    left: 14vw; /* Adjust for staggered layout */
-}
 
 /* Optional: Responsive behavior for smaller screens */
 @media (max-width: 768px) {
@@ -423,9 +408,6 @@ a.linkToOld:hover {
 
 
 
-
-
-
 .meet-team-container {
     padding:0px;
     margin-left: -65px;
@@ -433,8 +415,14 @@ a.linkToOld:hover {
 
 .teams-section{
     background-color: var(--background-colour);
-    margin-left: -65px;
-    padding-bottom: 10px;
+    padding-bottom: 10px;  
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Ensure that the title is centered */
+    
 }
 
 .teams-section h1{
@@ -443,7 +431,6 @@ a.linkToOld:hover {
 
 .teams-section h2{
     color: var(--background-colour);
-    
     text-align: center;
 }
 
@@ -532,6 +519,7 @@ a.linkToOld:hover {
     background-color: #00A380; 
     
 }
+
 
 
 a.clickable-hex {
