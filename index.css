@@ -329,9 +329,9 @@ a.linkToOld:hover {
 
 /* Hover effect for hexagon */
 .profile-hex:hover .hexagon {
-    transform: scale(1.1);  /* Slightly increase the size without affecting layout */
-    transition: transform 0.3s ease;  /* Smooth transition for scaling */
-    clip-path: none;  /* Remove hexagonal shape and make it a square */
+    transform: scale(1.01); /* Slightly increase the size without affecting layout */
+    transition: clip-path 0.3s ease, transform 0.3s ease;  /* Smooth transition for scaling */
+    clip-path: polygon(0% 50%, 0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%); 
   
 }
 
@@ -355,20 +355,41 @@ a.linkToOld:hover {
 }
 
 
-.individualTeam{
-    display: flex;
-    flex-wrap: wrap; /* Allows hexagons to wrap into rows */
-    justify-content: center; /* Aligns the pattern to the center horizontally */
-    gap: 10px; 
-    transform: translateX(60px);
-}
+
+
 .clickable-hex{
-    position: relative; /* Needed to position hexagons correctly */
-    width: 100%;
-    height: auto;
-    display: flex;
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+
+/* First row of hexagons */
+.clickable-hex .col-4:nth-child(1) {
+    top: 0;
+    left: 70;
+}
+
+.clickable-hex .col-4:nth-child(2) {
+    top: 0;
+    left: 3vw; /* Adjust to create space between hexagons */
+}
+
+.clickable-hex .col-4:nth-child(3) {
+    top: 0;
+    left: 16vw;
+}
+
+/* Second row of hexagons, offset vertically */
+.clickable-hex .col-4:nth-child(4) {
+    top: 50%; /* Offset by 50% (or adjust to your liking) */
+    left: 5vw; /* Adjust for the staggered effect */
+}
+
+.clickable-hex .col-4:nth-child(5) {
+    top: 50%; /* Offset vertically */
+    left: 14vw; /* Adjust for staggered layout */
+}
 
 
 
