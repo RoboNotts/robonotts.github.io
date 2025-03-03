@@ -26,10 +26,14 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    height: 90px;
 }
 
 .navbar .navbar-nav .nav-link {
-    color: white; 
+    float: left;
+    padding-left: 100px;
+    color: white;
+    font-family: 'Krona One';
 }
 
 .jumbotron {
@@ -88,184 +92,21 @@ body {
     display: inline-block;
 }
 
-.scientificLink:hover {
-    text-underline-offset: 0.4em;
-    text-decoration: underline;
-    font-family: var(--text-font), sans-serif;
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.mediaLink {
-    font-family: var(--text-font), sans-serif;
-    color: white;
-    font-weight: 120;
-    font-size: 1vw;
-    background-color: transparent;
-    border-color: transparent;
-    position: absolute;
-    top: 1%;
-    left: 1%;
-}
-
-.mediaLink:hover {
-    font-family: var(--text-font), sans-serif;
-    text-underline-offset: 0.4em;
-    text-decoration: underline;
-    background-color: transparent;
-    border-color: transparent ;
-}
-
-.h-40 {
-    height: 40%;
-}
-
-.h-30 {
-    height: 30%;
-}
-
-.h-20 {
-    height: 20%;
-}
-
-.h-15 {
-    height: 15%;
-}
-
-.h-125 {
-    height: 12.5%;
-}
-
-.h-10 {
-    height: 10%;
-}
-
-.title {
-    font-family: var(--title-font), sans-serif;
-    color: white;
-    font-weight: 120;
-    font-size: 4vw;
-    text-align:center;
-    width: 100%;
-}
-
-.biggerTitle {
-    font-family: var(--title-font), sans-serif;
-    color: white;
-    font-weight: 120;
-    font-size: 4.5vw;
-    text-align:center;
-    width: 50%;
-}
-
-a.robocup-link:link {
-    color: white;
-    text-decoration: underline;
-}
-
-a.robocup-link:visited {
-    color: white;
-    text-decoration: underline;
-}
-
-a.robocup-link:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.goingTo {
-    font-family: var(--text-font), sans-serif;
-    color: white;
-    font-weight: 50;
-    font-size: 1.24vw;
-    text-align: center;
-}
-
-a.linkToOld-link:link {
-    color: white;
-    text-decoration: underline;
-}
-
-a.linkToOld-link:visited {
-    color: white;
-    text-decoration: underline;
-}
-
-a.linkToOld:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.link {
-    font-family: var(--text-font), sans-serif;
-    color: white;
-    font-size: 1.1vw;
-    text-align: center;
-}
-
-.scrollDown {
-    font-family: var(--text-font), sans-serif;
-    color: white;
-    font-weight: 50;
-    font-size: 1.1vw;
-    text-align: center;
-}
-
-.square {
-    background-color: var(--background-colour);
-    height: 75vh;
-    width: 100%;
-}
-
-.pastCompTitle {
-    font-family: var(--title-font), sans-serif;
-    color: var(--background-colour);
-    font-weight: 120;
-    font-size: 3vw;
-}
-
-.comp1 {
-    font-family: var(--text-font);
-    text-align: left;
-    font-size: 1.5vw;
-}
-
-.date1 {
-    font-family: var(--text-font);
-    text-align: left;
-    font-size: 0.8vw;
-}
-
-.compOneVideo {
-    width: 39vw;
-    height: calc(39vw / 1.78);
-}
-
-.comp2 {
-    font-family: var(--text-font);
-    font-size: 1.5vw;
-}
-
-.date2 {
-    font-family: var(--text-font);
-    font-size: 0.8vw;
-}
-
-.compTwoVideo {
-    width: 39vw;
-    height: calc(39vw / 1.78);
-}
-
 .ourTeamTitle {
     font-family: var(--title-font), sans-serif;
-    color: var(--background-colour);
     font-weight: 120;
     font-size: 3vw;
     text-align: center;
     padding-top: 10px;
-   margin: 0 auto;
-    
-    
+    margin: 0 auto;
+}
+
+.darkTitle{
+    color: var(--background-colour);
+}
+
+.lightTitle{
+    color:white;
 }
 
 /* Container for the hexagon profile grid */
@@ -446,9 +287,7 @@ a.linkToOld:hover {
     
 }
 
-.teams-section h1{
-    color: white;
-}
+
 
 .teams-section h2{
     color: var(--background-colour);
@@ -457,11 +296,9 @@ a.linkToOld:hover {
 
 .sponsor-section{
     margin-left: -65px;
+
 }
 
-.sponsor-section h1{
-    color: var(--background-colour);
-}
 
 #carouselExampleControls {
     width: 100%;
@@ -543,6 +380,8 @@ a.linkToOld:hover {
 
 
 
+
+
 a.clickable-hex {
     display: block;
     text-decoration: none; /* Remove the underline from the links */
@@ -555,6 +394,30 @@ a.clickable-hex {
         height: calc(25vw * 0.866);
     }
 }
+
+
+
+.page {
+    background-color: #891616}
+
+.banner{
+    margin-top: 60px;
+    background-color: #F34616;
+}
+
+
+.formulaTitle{
+    color: white;
+    font-family: var(--title-font);
+}
+
+.formulaSubHead{
+    color: white;
+    font-family: var( --text-font);
+}
+
+
+
 
 
 
