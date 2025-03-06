@@ -395,14 +395,63 @@ a.clickable-hex {
     }
 }
 
+.dropdown-menu{
+    background-color: var(--background-colour);
+    font-family: var(--title-font);
+}
 
+
+.dropdown-item{
+    color: white;
+}
 
 .page {
     background-color: #891616}
 
-.banner{
+.healthPage{
+    background-color: #8b5a2b;
+}
+
+.engineerPage{
+    background-color: #4e142b;
+}
+
+.searchPage{
+    background-color: #39612f;
+}
+
+.phyrcPage{
+    background-color: #1a2a4f;
+}
+
+.formulaBanner{
     margin-top: 60px;
+    padding: 10px;
     background-color: #F34616;
+}
+
+.healthBanner{
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #F59F00;
+}
+
+.engineerBanner{
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #D33675;
+}
+
+.searchBanner{
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #00A380;
+}
+
+.phyrcBanner{
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #4772d7;
 }
 
 
