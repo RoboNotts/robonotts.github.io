@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2007.09 680.83">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-7 {
+        letter-spacing: .01em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        fill: #f49f1e;
+      }
+
+      .cls-4 {
+        font-family: Tomorrow-Regular, Tomorrow;
+        font-size: 30px;
+      }
+
+      .cls-5 {
+        font-family: Tomorrow-SemiBold, Tomorrow;
+        font-size: 100px;
+        font-weight: 600;
+      }
+
+      .cls-11 {
+        fill: #393939;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <polygon class="cls-10" points="122.75 0 0 212.61 245.5 212.61 122.75 0"/>
+    <polygon class="cls-11" points="191.28 181.31 104.68 31.31 18.07 181.31 191.28 181.31"/>
+    <polygon class="cls-3" points="331.23 88.9 181.23 88.9 106.23 218.81 181.23 348.71 331.23 348.71 406.23 218.81 331.23 88.9"/>
+    <polygon class="cls-11" points="311.23 123.54 201.23 123.54 146.23 218.81 201.23 314.07 311.23 314.07 366.23 218.81 311.23 123.54"/>
+  </g>
+  <g id="Layer_3">
+    <g>
+      <text class="cls-5" transform="translate(431.88 212.61) scale(.81 1)"><tspan x="0" y="0">H</tspan><tspan class="cls-9" x="74.9" y="0">e</tspan><tspan x="132.8" y="0">alth</tspan><tspan class="cls-1" x="325.8" y="0">c</tspan><tspan x="382.1" y="0">a</tspan><tspan class="cls-6" x="443.49" y="0">r</tspan><tspan x="486" y="0">e</tspan></text>
+      <text class="cls-4" transform="translate(437.97 247.86)"><tspan x="0" y="0">RO</tspan><tspan class="cls-2" x="41.13" y="0">B</tspan><tspan x="61.62" y="0">ONO</tspan><tspan class="cls-7" x="124.8" y="0">T</tspan><tspan class="cls-8" x="141.78" y="0">T</tspan><tspan x="157.77" y="0">S TEAM</tspan></text>
+    </g>
+  </g>
+</svg>

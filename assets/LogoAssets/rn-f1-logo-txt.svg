@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1932.5 687.02">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-3 {
+        fill: #ef4823;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        letter-spacing: .01em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-family: Tomorrow-Regular, Tomorrow;
+        font-size: 30px;
+      }
+
+      .cls-6 {
+        font-family: Tomorrow-SemiBold, Tomorrow;
+        font-size: 100px;
+        font-weight: 600;
+      }
+
+      .cls-9 {
+        fill: #393939;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <polygon class="cls-3" points="181.64 212.61 304.39 0 58.89 0 181.64 212.61"/>
+    <polygon class="cls-9" points="181.64 150 268.24 0 95.04 0 181.64 150"/>
+    <polygon class="cls-4" points="256.64 95.1 106.64 95.1 31.64 225 106.64 354.9 256.64 354.9 331.64 225 256.64 95.1"/>
+    <polygon class="cls-9" points="236.64 129.74 126.64 129.74 71.64 225 126.64 320.26 236.64 320.26 291.64 225 236.64 129.74"/>
+  </g>
+  <g id="Layer_3">
+    <g>
+      <text class="cls-6" transform="translate(357.28 218.81) scale(.81 1)"><tspan class="cls-2" x="0" y="0">F</tspan><tspan x="55.6" y="0">ormula One</tspan></text>
+      <text class="cls-5" transform="translate(365.28 254.05)"><tspan x="0" y="0">RO</tspan><tspan class="cls-1" x="41.13" y="0">B</tspan><tspan x="61.62" y="0">ONO</tspan><tspan class="cls-7" x="124.8" y="0">T</tspan><tspan class="cls-8" x="141.78" y="0">T</tspan><tspan x="157.77" y="0">S TEAM</tspan></text>
+    </g>
+  </g>
+</svg>

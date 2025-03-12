@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1932.5 601.49">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        fill: #4f6fb6;
+      }
+
+      .cls-7 {
+        letter-spacing: .01em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        font-family: Tomorrow-Regular, Tomorrow;
+        font-size: 30px;
+      }
+
+      .cls-4 {
+        font-family: Tomorrow-SemiBold, Tomorrow;
+        font-size: 100px;
+        font-weight: 600;
+      }
+
+      .cls-9 {
+        fill: #393939;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <polygon class="cls-6" points="181.64 151.86 58.89 364.47 304.39 364.47 181.64 151.86"/>
+    <polygon class="cls-9" points="181.64 214.47 95.04 364.47 268.24 364.47 181.64 214.47"/>
+    <polygon class="cls-2" points="256.64 9.56 106.64 9.56 31.64 139.47 106.64 269.37 256.64 269.37 331.64 139.47 256.64 9.56"/>
+    <polygon class="cls-9" points="236.64 44.2 126.64 44.2 71.64 139.47 126.64 234.73 236.64 234.73 291.64 139.47 236.64 44.2"/>
+  </g>
+  <g id="Layer_3">
+    <g>
+      <text class="cls-4" transform="translate(357.28 133.27) scale(.81 1)"><tspan x="0" y="0">P</tspan><tspan class="cls-5" x="65.7" y="0">h</tspan><tspan x="130.4" y="0">y RC</tspan></text>
+      <text class="cls-3" transform="translate(363.37 168.52)"><tspan x="0" y="0">RO</tspan><tspan class="cls-1" x="41.13" y="0">B</tspan><tspan x="61.62" y="0">ONO</tspan><tspan class="cls-7" x="124.8" y="0">T</tspan><tspan class="cls-8" x="141.78" y="0">T</tspan><tspan x="157.77" y="0">S TEAM</tspan></text>
+    </g>
+  </g>
+</svg>
