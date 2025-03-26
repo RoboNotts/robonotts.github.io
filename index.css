@@ -49,6 +49,19 @@ body {
     padding:0;
 }
 
+.jumbotronPublic{
+    position: relative;
+    background-image: url("assets/temp-public.jpg");
+    background-size: cover;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
+}
+
 .jumbotron-text{
     padding-top: 20px;
 }
@@ -61,6 +74,16 @@ body {
     z-index: 1; 
 }
 
+.jumbotronPublic::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+}
+
+
+
 .container {
     z-index: 2; 
     text-align: center;
@@ -68,6 +91,7 @@ body {
     margin-top: 80px;
     padding-bottom: 20px;
 }
+
 
 
 
@@ -99,6 +123,10 @@ body {
     text-align: center;
     padding-top: 10px;
     margin: 0 auto;
+}
+
+.jumbotronPublic .ourTeamTitle{
+    font-size: 5vw;
 }
 
 .darkTitle{
@@ -424,17 +452,36 @@ a.clickable-hex {
     background-color: #1a2a4f;
 }
 
-.formulaBanner{
-    margin-top: 60px;
-    padding: 10px;
+.formulaBanner {
+    margin-top: 63px;
+    padding: 80px;
     background-color: #F34616;
+    position: relative; /* Establish a positioning context */
+}
+
+.formulaBanner object {
+    position: absolute;
+    top: -40%; /* Adjust the value as needed to move the image up */
+    left: 0;
+    right: 0;
+    height: 400px; /* Maintain the size of the image */
 }
 
 .healthBanner{
-    margin-top: 60px;
-    padding: 10px;
     background-color: #F59F00;
+    margin-top: 63px;
+    padding: 80px;
+    position: relative; /* Establish a positioning context */
 }
+
+.healthBanner object{
+    position: absolute;
+    top: -40%; /* Adjust the value as needed to move the image up */
+    left: 0;
+    right: 0;
+    height: 400px; /* Maintain the size of the image */
+}
+
 
 .engineerBanner{
     margin-top: 60px;
