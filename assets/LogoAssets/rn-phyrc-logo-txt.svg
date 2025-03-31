@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1932.5 601.49">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1181.33 507.33">
   <defs>
     <style>
-
-    @import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&#38;display=swap");
-    
       .cls-1 {
         letter-spacing: 0em;
       }
@@ -46,15 +43,15 @@
     </style>
   </defs>
   <g id="Layer_1">
-    <polygon class="cls-6" points="181.64 151.86 58.89 364.47 304.39 364.47 181.64 151.86"/>
-    <polygon class="cls-9" points="181.64 214.47 95.04 364.47 268.24 364.47 181.64 214.47"/>
-    <polygon class="cls-2" points="256.64 9.56 106.64 9.56 31.64 139.47 106.64 269.37 256.64 269.37 331.64 139.47 256.64 9.56"/>
-    <polygon class="cls-9" points="236.64 44.2 126.64 44.2 71.64 139.47 126.64 234.73 236.64 234.73 291.64 139.47 236.64 44.2"/>
+    <polygon class="cls-6" points="297.64 272.06 174.89 484.67 420.39 484.67 297.64 272.06"/>
+    <polygon class="cls-9" points="297.64 334.67 211.04 484.67 384.24 484.67 297.64 334.67"/>
+    <polygon class="cls-2" points="372.64 129.76 222.64 129.76 147.64 259.67 222.64 389.57 372.64 389.57 447.64 259.67 372.64 129.76"/>
+    <polygon class="cls-9" points="352.64 164.4 242.64 164.4 187.64 259.67 242.64 354.93 352.64 354.93 407.64 259.67 352.64 164.4"/>
   </g>
   <g id="Layer_3">
     <g>
-      <text class="cls-4" transform="translate(357.28 133.27) scale(.81 1)"><tspan x="0" y="0">P</tspan><tspan class="cls-5" x="65.7" y="0">h</tspan><tspan x="130.4" y="0">y RC</tspan></text>
-      <text class="cls-3" transform="translate(363.37 168.52)"><tspan x="0" y="0">RO</tspan><tspan class="cls-1" x="41.13" y="0">B</tspan><tspan x="61.62" y="0">ONO</tspan><tspan class="cls-7" x="124.8" y="0">T</tspan><tspan class="cls-8" x="141.78" y="0">T</tspan><tspan x="157.77" y="0">S TEAM</tspan></text>
+      <text class="cls-4" transform="translate(473.28 253.47) scale(.81 1)"><tspan x="0" y="0">P</tspan><tspan class="cls-5" x="65.7" y="0">h</tspan><tspan x="130.4" y="0">y RC</tspan></text>
+      <text class="cls-3" transform="translate(479.37 288.72)"><tspan x="0" y="0">RO</tspan><tspan class="cls-1" x="41.13" y="0">B</tspan><tspan x="61.62" y="0">ONO</tspan><tspan class="cls-7" x="124.8" y="0">T</tspan><tspan class="cls-8" x="141.78" y="0">T</tspan><tspan x="157.77" y="0">S TEAM</tspan></text>
     </g>
   </g>
 </svg>

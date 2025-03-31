@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1181.33 507.33">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #00a380;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        letter-spacing: .01em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        font-family: Tomorrow-Regular, Tomorrow;
+        font-size: 30px;
+      }
+
+      .cls-5 {
+        font-family: Tomorrow-SemiBold, Tomorrow;
+        font-size: 100px;
+        font-weight: 600;
+      }
+
+      .cls-12 {
+        fill: #393939;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <polygon class="cls-6" points="286.91 265.86 41.41 265.86 164.16 478.47 286.91 265.86"/>
+    <polygon class="cls-12" points="232.69 297.17 59.48 297.17 146.08 447.17 232.69 297.17"/>
+    <polygon class="cls-3" points="372.64 129.76 222.64 129.76 147.64 259.67 222.64 389.57 372.64 389.57 447.64 259.67 372.64 129.76"/>
+    <polygon class="cls-12" points="352.64 164.4 242.64 164.4 187.64 259.67 242.64 354.93 352.64 354.93 407.64 259.67 352.64 164.4"/>
+  </g>
+  <g id="Layer_3">
+    <g>
+      <text class="cls-5" transform="translate(473.28 253.47) scale(.81 1)"><tspan x="0" y="0">S</tspan><tspan class="cls-1" x="69.6" y="0">e</tspan><tspan x="127.5" y="0">a</tspan><tspan class="cls-7" x="188.9" y="0">r</tspan><tspan x="231.4" y="0">ch + </tspan><tspan class="cls-7" x="462.8" y="0">R</tspan><tspan x="533.5" y="0">e</tspan><tspan class="cls-10" x="594.2" y="0">s</tspan><tspan class="cls-9" x="652" y="0">cue</tspan></text>
+      <text class="cls-4" transform="translate(479.37 288.72)"><tspan x="0" y="0">RO</tspan><tspan class="cls-2" x="41.13" y="0">B</tspan><tspan x="61.62" y="0">ONO</tspan><tspan class="cls-8" x="124.8" y="0">T</tspan><tspan class="cls-11" x="141.78" y="0">T</tspan><tspan x="157.77" y="0">S TEAM</tspan></text>
+    </g>
+  </g>
+</svg>
