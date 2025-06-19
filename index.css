@@ -11,14 +11,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal overflow */
 }
+ .hexagon h4 {
+   font-family: var(--title-font), sans-serif; 
+   color: var(--background-colour);
+}
+
+.logo-wrapper {
+  flex: 0 0 auto;
+  height: 450px;           /* Uniform height */
+  max-width: 100%;         /* Prevents overflow */
+  overflow: hidden;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.banner-svg {
+  height: 100%;
+  width: auto;
+}
+
+.healthBanner{
+   background: linear-gradient(to bottom right, #1a1400, #f59f00);
+
+}
 
 
+.engineerBanner{
+    background: linear-gradient(to bottom right, #1c0e1a, #b1104f);
+
+}
+
+.formulaBanner{
+    background: linear-gradient(to bottom right, #1a100c, #f34616);
+
+
+}
+
+.phyBanner{
+    background: linear-gradient(to bottom right, #0d1b2a, #345cd6);
+
+}
+
+.searchBanner{
+    background: linear-gradient(to bottom right, #0d1f1c, #00a380);
+
+
+}
 
 .navbar{
     background-color: var(--background-colour);
@@ -36,11 +82,32 @@ body {
     font-family: 'Krona One';
 }
 
+
+
+
+.dropdown-menu{
+    background-color: var(--background-colour);
+    font-family: var(--title-font);
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.underline--double {
+  box-shadow:
+    inset 0 -0.075em white,
+    inset 0 -0.1em red,
+    inset 0 -0.15em white,
+    inset 0 -0.175em red;
+}
+
+
 .jumbotron {
     position: relative;
     background-image: url("assets/temp-background.png");
     background-size: cover;
-    height: 650px;
+    height: 600px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -49,7 +116,7 @@ body {
     padding:0;
 }
 
-.jumbotronPublic{
+.jumbotronPublic{ /*publications jumbotron*/
     position: relative;
     background-image: url("assets/temp-public.jpg");
     background-size: cover;
@@ -66,7 +133,7 @@ body {
     padding-top: 20px;
 }
 
-.jumbotron::before {
+.jumbotron::before { /*dark overlay of jumbotron to make it more readable*/
     content: '';
     position: absolute;
     inset: 0;
@@ -83,37 +150,12 @@ body {
 }
 
 
-
 .container {
     z-index: 2; 
     text-align: center;
     color: white;
     margin-top: 80px;
     padding-bottom: 20px;
-}
-
-
-
-
-
-.logo {
-    position: absolute;
-    left: 1%;
-}
-
-
-
-.scientificLink {
-    font-family: var(--text-font), sans-serif;
-    color: white;
-    font-weight: 120;
-    font-size: 1vw;
-    background-color: transparent;
-    border-color: transparent;
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    display: inline-block;
 }
 
 .ourTeamTitle {
@@ -123,6 +165,28 @@ body {
     text-align: center;
     padding-top: 10px;
     margin: 0 auto;
+}
+
+.sponsorTitle{
+    font-family: var(--title-font), sans-serif;
+    font-weight: 120;
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-10px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.clickable-hex:hover .hexagon {
+  animation: bounce 0.6s;
+  cursor: pointer;
 }
 
 .jumbotronPublic .ourTeamTitle{
@@ -260,44 +324,6 @@ body {
     left: 14vw; /* Adjust for staggered layout */
 }
 
-
-
-/* Optional: Responsive behavior for smaller screens */
-@media (max-width: 768px) {
-    .hexagon {
-        width: 40vw;  /* Adjust the size of hexagons */
-        height: calc(40vw * 0.866); /* Adjust height for smaller screens */
-    }
-
-    /* Adjust positioning for mobile */
-    .clickable-hex .col-4:nth-child(1) {
-        top: 0;
-        left: 0;
-    }
-
-    .clickable-hex .col-4:nth-child(2) {
-        top: 0;
-        left: 35vw;
-    }
-
-    .clickable-hex .col-4:nth-child(3) {
-        top: 0;
-        left: 80vw;
-    }
-
-    .clickable-hex .col-4:nth-child(4) {
-        top: 50%;
-        left: 0vw;
-    }
-
-    .clickable-hex .col-4:nth-child(5) {
-        top: 50%;
-        left: 45vw;
-    }
-}
-
-
-
 .meet-team-container {
     padding:0px;
     margin-left: -65px;
@@ -317,10 +343,7 @@ body {
 
 
 
-.teams-section h2{
-    color: var(--background-colour);
-    text-align: center;
-}
+
 
 .sponsor-section{
     margin-left: -65px;
@@ -333,6 +356,40 @@ body {
     margin: 0 auto;
     padding: 0;
   }
+
+.sponsor-banner {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #fff; /* optional */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.sponsor-track {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+}
+
+.sponsor-item {
+  flex: 0 0 auto;
+  padding: 0 40px; /* spacing between logos */
+}
+
+.sponsor-item img {
+  height: 50px; /* adjust as needed */
+  display: block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
   #carouselExampleControls .carousel-inner img {
     width: 100%;
@@ -407,141 +464,11 @@ body {
 }
 
 
-
-
-
 a.clickable-hex {
     display: block;
     text-decoration: none; /* Remove the underline from the links */
 }
 
-/* Responsive behavior for hexagons */
-@media (max-width: 768px) {
-    .hexagon {
-        width: 25vw;
-        height: calc(25vw * 0.866);
-    }
-}
-
-.dropdown-menu{
-    background-color: var(--background-colour);
-    font-family: var(--title-font);
-}
 
 
-.dropdown-item{
-    color: white;
-}
-
-.page {
-    background-color: #891616}
-
-.healthPage{
-    background-color: #8b5a2b;
-}
-
-.engineerPage{
-    background-color: #4e142b;
-}
-
-.searchPage{
-    background-color: #39612f;
-}
-
-.phyrcPage{
-    background-color: #1a2a4f;
-}
-
-.formulaBanner {
-    margin-top: 63px;
-    padding: 80px;
-    background-color: #F34616;
-    position: relative; /* Establish a positioning context */
-}
-
-.formulaBanner object {
-    position: absolute;
-    top: -40%; /* Adjust the value as needed to move the image up */
-    left: 0;
-    right: 0;
-    height: 400px; /* Maintain the size of the image */
-}
-
-.healthBanner{
-    background-color: #F59F00;
-    margin-top: 63px;
-    padding: 80px;
-    position: relative; /* Establish a positioning context */
-}
-
-.healthBanner object{
-    position: absolute;
-    top: -40%; /* Adjust the value as needed to move the image up */
-    left: 0;
-    right: 0;
-    height: 400px; /* Maintain the size of the image */
-}
-
-
-.engineerBanner{
-    margin-top: 60px;
-    padding: 10px;
-    background-color: #D33675;
-}
-
-.searchBanner{
-    margin-top: 60px;
-    padding: 10px;
-    background-color: #00A380;
-}
-
-.phyrcBanner{
-    margin-top: 60px;
-    padding: 10px;
-    background-color: #4772d7;
-}
-
-
-.formulaTitle{
-    color: white;
-    font-family: var(--title-font);
-}
-
-.formulaSubHead{
-    color: white;
-    font-family: var( --text-font);
-}
-
-
-
-
-
-
-.bottomSquare {
-    background-color: var(--background-colour);
-    height: 20vh;
-    width: 100%;
-}
-
-.followOn {
-    font-family: var(--text-font);
-    position: relative;
-    color: white;
-    text-align: left;
-    font-size: smaller;
-
-}
-
-.instagram {
-    font-family: var(--text-font);
-    color: white;
-    font-size: small;
-}
-
-.tiktok {
-    font-family: var(--text-font);
-    color: white;
-    font-size: small;
-    left: 10px;
-}
 
