@@ -43,13 +43,46 @@ body {
 
 }
 
-
 .engineerBanner{
     background: linear-gradient(to bottom right, #1c0e1a, #b1104f);
 
 }
 
+.logo-text-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content{
+    margin-left: 100px;
+     
+}
+
+
+.content .banner-description{
+    top: 63%;
+    left: 53.3%;
+}
+
+.banner-description {
+  position: absolute;
+ 
+  top: 62%; /* tweak this value until it fits just below "RoboNotts" in your SVG */
+  left: 53.5%;
+  transform: translateX(-34%);
+  font-family: 'Tomorrow', sans-serif;
+  
+  font-size: 1.2rem;
+  color: white;
+  text-align: left;
+   width: 60%;
+  padding: 0 10px;
+  pointer-events: none; /* So it doesn't block clicks to the logo if needed */
+}
+
 .formulaBanner{
+    
     background: linear-gradient(to bottom right, #1a100c, #f34616);
 
 
@@ -63,8 +96,9 @@ body {
 .searchBanner{
     background: linear-gradient(to bottom right, #0d1f1c, #00a380);
 
-
 }
+
+
 
 .navbar{
     background-color: var(--background-colour);
@@ -115,6 +149,8 @@ body {
     margin-right: auto;
     padding:0;
 }
+
+
 
 .jumbotronPublic{ /*publications jumbotron*/
     position: relative;
