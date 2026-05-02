@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sponsors — RoboNotts</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .sponsor-hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 40%, rgba(228,27,45,0.07) 0%, transparent 70%),
+        linear-gradient(180deg, var(--black) 0%, var(--dark) 100%);
+      z-index: 0;
+    }
+    /* Sponsor filled slot */
+    .sponsor-filled {
+      aspect-ratio: 16/9;
+      background: var(--dark-2);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+    .sponsor-filled:hover {
+      border-color: rgba(228,27,45,0.3);
+    }
+    .sponsor-filled img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: grayscale(0.3) brightness(1.1);
+      transition: filter 0.2s;
+    }
+    .sponsor-filled:hover img { filter: none; }
+
+    /* Perks table */
+    .perks-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 48px;
+      font-size: 14px;
+    }
+    .perks-table th {
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .perks-table th:not(:first-child) { text-align: center; }
+    .perks-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      color: var(--gray-light);
+    }
+    .perks-table td:not(:first-child) { text-align: center; }
+    .perks-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .th-gold { color: #FFD700; }
+    .th-silver { color: #C0C0C0; }
+    .th-bronze { color: #CD7F32; }
+    .check { color: var(--red); font-size: 16px; }
+    .cross { color: rgba(255,255,255,0.15); font-size: 16px; }
+
+    .mobile-menu {
+      display: none; position: fixed; inset: 0;
+      background: rgba(10,10,10,0.98); z-index: 999;
+      flex-direction: column; align-items: center; justify-content: center; gap: 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 0.06em; color: var(--white); text-decoration: none; transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--red); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--white); font-size: 32px; cursor: pointer; padding: 8px; }
+    @media (max-width: 700px) { .perks-table { font-size: 12px; } .perks-table th, .perks-table td { padding: 10px; } }
+  </style>
+</head>
+<body class="page-enter">
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="racing.html">Autonomous Racing</a>
+  <a href="search-rescue.html">Search &amp; Rescue</a>
+  <a href="healthcare.html">Healthcare</a>
+  <a href="sponsors.html">Sponsors</a>
+</div>
+
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="assets/logo-wide.png" alt="RoboNotts" /></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Teams</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="racing.html">🏎️ Autonomous Racing</a></li>
+        <li><a href="search-rescue.html">🔍 Search &amp; Rescue</a></li>
+        <li><a href="healthcare.html">🏥 Healthcare</a></li>
+      </ul>
+    </li>
+    <li><a href="sponsors.html" class="active">Sponsors</a></li>
+    <li><a href="mailto:info@robonotts.com" class="btn btn-primary" style="margin-left:8px;padding:10px 22px;font-size:12px;">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<div style="position:relative; min-height:50vh; display:flex; align-items:center; padding-top:100px; background:var(--black); overflow:hidden;">
+  <div class="sponsor-hero-bg"></div>
+  <div style="position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:0 48px; width:100%;">
+    <span style="display:inline-flex; align-items:center; gap:8px; font-size:11px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:var(--red); border:1px solid rgba(228,27,45,0.4); padding:6px 14px; border-radius:3px; margin-bottom:24px;">
+      💼 Partnership
+    </span>
+    <h1 style="font-family:'Bebas Neue',sans-serif; font-size:clamp(60px,9vw,120px); line-height:0.92; letter-spacing:0.02em; margin-bottom:28px;">
+      Our<br><span style="color:var(--red);">Sponsors</span>
+    </h1>
+    <p style="font-size:18px; font-weight:300; color:var(--gray-light); max-width:560px; line-height:1.7;">
+      RoboNotts is powered by the generous support of organisations who believe in the next generation of robotics engineers and researchers.
+    </p>
+  </div>
+</div>
+
+<div class="red-divider"></div>
+
+<!-- CURRENT SPONSORS -->
+<section class="sponsors-section">
+  <div class="container">
+    <p class="section-label">Current Partners</p>
+    <h2 class="section-title">Our Supporters</h2>
+
+    <!-- GOLD TIER -->
+    <div class="sponsor-tier tier-gold" data-reveal>
+      <div class="tier-header">
+        <span class="tier-label">⭐ Gold</span>
+        <div class="tier-line"></div>
+      </div>
+      <div class="sponsors-grid gold">
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🏆</div>
+          <div class="sponsor-slot-text">Gold Sponsor</div>
+        </div>
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🏆</div>
+          <div class="sponsor-slot-text">Gold Sponsor</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SILVER TIER -->
+    <div class="sponsor-tier tier-silver" data-reveal>
+      <div class="tier-header">
+        <span class="tier-label">🥈 Silver</span>
+        <div class="tier-line"></div>
+      </div>
+      <div class="sponsors-grid silver">
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🥈</div>
+          <div class="sponsor-slot-text">Silver Sponsor</div>
+        </div>
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🥈</div>
+          <div class="sponsor-slot-text">Silver Sponsor</div>
+        </div>
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🥈</div>
+          <div class="sponsor-slot-text">Silver Sponsor</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRONZE TIER -->
+    <div class="sponsor-tier tier-bronze" data-reveal>
+      <div class="tier-header">
+        <span class="tier-label">🥉 Bronze</span>
+        <div class="tier-line"></div>
+      </div>
+      <div class="sponsors-grid bronze">
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🥉</div>
+          <div class="sponsor-slot-text">Bronze</div>
+        </div>
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🥉</div>
+          <div class="sponsor-slot-text">Bronze</div>
+        </div>
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🥉</div>
+          <div class="sponsor-slot-text">Bronze</div>
+        </div>
+        <div class="sponsor-slot">
+          <div class="sponsor-slot-icon">🥉</div>
+          <div class="sponsor-slot-text">Bronze</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERKS TABLE -->
+    <div data-reveal style="margin-top: 80px;">
+      <p class="section-label" style="margin-bottom: 12px;">Sponsorship Tiers</p>
+      <h2 class="section-title" style="font-size: clamp(36px,5vw,60px); margin-bottom: 8px;">What You Get</h2>
+      <p style="color:var(--gray); font-size:14px; max-width:500px; margin-bottom:0;">All tiers help fund equipment, competition entry fees, and travel for our student team.</p>
+      <table class="perks-table">
+        <thead>
+          <tr>
+            <th>Perk</th>
+            <th class="th-bronze">Bronze</th>
+            <th class="th-silver">Silver</th>
+            <th class="th-gold">Gold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Logo on website</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Social media mention</td>
+            <td><span class="cross">–</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Logo on robot / team kit</td>
+            <td><span class="cross">–</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Dedicated team page acknowledgement</td>
+            <td><span class="cross">–</span></td>
+            <td><span class="cross">–</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Access to student recruitment pipeline</td>
+            <td><span class="cross">–</span></td>
+            <td><span class="cross">–</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Competition event recognition</td>
+            <td><span class="cross">–</span></td>
+            <td><span class="cross">–</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Annual sponsor report</td>
+            <td><span class="cross">–</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CTA -->
+    <div class="sponsors-cta-box" data-reveal>
+      <h2>Become a Sponsor</h2>
+      <p>Partner with RoboNotts and support the next generation of robotics engineers coming out of the University of Nottingham. Your investment directly funds equipment, competition travel, and research.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="mailto:info@robonotts.com?subject=Sponsorship Enquiry" class="btn btn-primary">Get in Touch →</a>
+        <a href="index.html" class="btn btn-outline">Learn About Us</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo-wide.png" alt="RoboNotts" />
+      <p class="footer-tagline">Student-led robotics research and competition team at the University of Nottingham.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Teams</p>
+      <ul class="footer-links">
+        <li><a href="racing.html">Autonomous Racing</a></li>
+        <li><a href="search-rescue.html">Search &amp; Rescue</a></li>
+        <li><a href="healthcare.html">Healthcare</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Organisation</p>
+      <ul class="footer-links">
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Follow Us</p>
+      <ul class="footer-links">
+        <li><a href="https://www.instagram.com/happy_therobot/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@happy_therobot" target="_blank">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 RoboNotts — University of Nottingham</span>
+    <span>Partnerships &amp; Sponsorship</span>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('revealed'); observer.unobserve(e.target); }}), { threshold: 0.1 });
+  document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

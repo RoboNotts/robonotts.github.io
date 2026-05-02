@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search &amp; Rescue — RoboNotts</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .rescue-hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 30% 50%, rgba(0,180,120,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 30%, rgba(228,27,45,0.06) 0%, transparent 60%),
+        linear-gradient(180deg, var(--black) 0%, var(--dark) 100%);
+      z-index: 0;
+    }
+    .rescue-grid-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,140,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,140,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+    .mobile-menu {
+      display: none; position: fixed; inset: 0;
+      background: rgba(10,10,10,0.98); z-index: 999;
+      flex-direction: column; align-items: center; justify-content: center; gap: 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 0.06em; color: var(--white); text-decoration: none; transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--red); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--white); font-size: 32px; cursor: pointer; padding: 8px; }
+  </style>
+</head>
+<body class="page-enter">
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="racing.html">Autonomous Racing</a>
+  <a href="search-rescue.html">Search &amp; Rescue</a>
+  <a href="healthcare.html">Healthcare</a>
+  <a href="sponsors.html">Sponsors</a>
+</div>
+
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="assets/logo-wide.png" alt="RoboNotts" /></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown">
+      <a href="#" class="active">Teams</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="racing.html">🏎️ Autonomous Racing</a></li>
+        <li><a href="search-rescue.html">🔍 Search &amp; Rescue</a></li>
+        <li><a href="healthcare.html">🏥 Healthcare</a></li>
+      </ul>
+    </li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+    <li><a href="mailto:info@robonotts.com" class="btn btn-primary" style="margin-left:8px;padding:10px 22px;font-size:12px;">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<div class="team-hero" style="background: var(--black); min-height: 60vh; display:flex; align-items:center;">
+  <div class="rescue-hero-bg"></div>
+  <div class="rescue-grid-pattern"></div>
+
+  <div class="team-hero-content" style="width:100%;">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="#">Teams</a>
+      <span class="breadcrumb-sep">/</span>
+      <span style="color:var(--white);">Search &amp; Rescue</span>
+    </div>
+    <span class="team-hero-tag">🔍 Team 02</span>
+    <h1 style="font-family:'Bebas Neue',sans-serif; font-size:clamp(60px,9vw,120px); line-height:0.92; letter-spacing:0.02em; margin-bottom:28px;">
+      Search &amp;<br><span style="color:var(--red);">Rescue</span>
+    </h1>
+    <p class="team-hero-desc">Deploying intelligent robots into the unknown — navigating disaster zones, unstructured terrain, and hazardous environments where humans cannot safely go.</p>
+  </div>
+</div>
+
+<div class="red-divider"></div>
+
+<!-- DESCRIPTION -->
+<section class="team-desc-section">
+  <div class="container">
+    <div class="team-desc-grid">
+      <div class="desc-text" data-reveal>
+        <p class="section-label">What We Do</p>
+        <h2>Into the Danger Zone</h2>
+        <p>The Search and Rescue team builds autonomous robots designed to operate in environments that are dangerous, unpredictable, or simply inaccessible to human responders. In disaster scenarios — collapsed buildings, chemical spills, flood zones — every second counts.</p>
+        <p>Our robots combine advanced sensor arrays with robust autonomy to navigate rubble, confined spaces, and dynamic obstacles. Using simultaneous localisation and mapping (SLAM), they build real-time maps of unexplored environments while actively searching for signs of life.</p>
+        <p>We integrate thermal imaging, gas sensors, and acoustic detection to locate survivors, and build communication relay systems so robots can report back even when out of direct radio range. Our goal: robots that can operate for extended missions without human guidance.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">ROS2</span>
+          <span class="tech-tag">SLAM</span>
+          <span class="tech-tag">Thermal Imaging</span>
+          <span class="tech-tag">Drone Systems</span>
+          <span class="tech-tag">Navigation</span>
+          <span class="tech-tag">Sensor Fusion</span>
+          <span class="tech-tag">Computer Vision</span>
+        </div>
+      </div>
+      <div class="desc-highlights" data-reveal>
+        <div class="highlight-card">
+          <h4>🗺️ Autonomous Navigation</h4>
+          <p>SLAM-based mapping lets our robots build and navigate 3D maps of unknown environments in real time — no pre-loaded maps required, just sensors and intelligence.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🔥 Survivor Detection</h4>
+          <p>Thermal cameras, microphone arrays, and CO2 sensors fused together to identify signs of life even through obstructions, debris, and low visibility conditions.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🌐 Multi-Robot Coordination</h4>
+          <p>Multiple robots working in concert, sharing map data and search progress over a distributed mesh network to maximise area coverage and minimise overlap.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🛡️ Rugged Platform Design</h4>
+          <p>Hardware built to take a beating — tracks, sealed electronics, and fail-safe recovery behaviours that keep the robot operational in the harshest conditions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM MEMBERS -->
+<section class="members-section">
+  <div class="container">
+    <p class="section-label">The People</p>
+    <h2 class="section-title">Search &amp; Rescue<br>Team Members</h2>
+    <p style="color:var(--gray); font-size:14px; margin-top:-8px; max-width:500px;">Team member photos and bios — add your details below to populate each card.</p>
+
+    <div class="members-grid">
+      <div class="member-card" data-reveal data-reveal-delay="1">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Team Lead</div>
+          <div class="member-role">Team Captain</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="2">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Navigation Lead</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="3">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Sensor Systems</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="4">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Hardware Design</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="1">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Computer Vision</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="2">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Communications</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="3">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Software Engineer</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="4">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Drone Pilot / Dev</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top: 28px; font-size:12px; color:var(--gray);">
+      To add a real photo: replace <code>.member-photo-placeholder</code> with <code>&lt;img src="path/to/photo.jpg" style="width:100%;height:100%;object-fit:cover;"&gt;</code>
+    </p>
+  </div>
+</section>
+
+<!-- BACK CTA -->
+<section style="background:var(--dark); padding:60px 48px; text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray); font-size:14px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:20px;">Explore More</p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="racing.html" class="btn btn-outline">🏎️ Autonomous Racing</a>
+      <a href="healthcare.html" class="btn btn-outline">🏥 Healthcare</a>
+      <a href="index.html" class="btn btn-primary">← Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo-wide.png" alt="RoboNotts" />
+      <p class="footer-tagline">Student-led robotics research and competition team at the University of Nottingham.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Teams</p>
+      <ul class="footer-links">
+        <li><a href="racing.html">Autonomous Racing</a></li>
+        <li><a href="search-rescue.html">Search &amp; Rescue</a></li>
+        <li><a href="healthcare.html">Healthcare</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Organisation</p>
+      <ul class="footer-links">
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Follow Us</p>
+      <ul class="footer-links">
+        <li><a href="https://www.instagram.com/happy_therobot/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@happy_therobot" target="_blank">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 RoboNotts — University of Nottingham</span>
+    <span>Search &amp; Rescue Team</span>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('revealed'); observer.unobserve(e.target); }}), { threshold: 0.1 });
+  document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

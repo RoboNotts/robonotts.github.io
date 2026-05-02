@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthcare — RoboNotts</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .health-hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 60% 40%, rgba(200,50,200,0.07) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 20% 70%, rgba(228,27,45,0.06) 0%, transparent 60%),
+        linear-gradient(180deg, var(--black) 0%, var(--dark) 100%);
+      z-index: 0;
+    }
+    .pulse-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(228,27,45,0.12);
+      animation: pulseRing 4s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes pulseRing {
+      0% { transform: scale(0.8); opacity: 0.8; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+    .mobile-menu {
+      display: none; position: fixed; inset: 0;
+      background: rgba(10,10,10,0.98); z-index: 999;
+      flex-direction: column; align-items: center; justify-content: center; gap: 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 0.06em; color: var(--white); text-decoration: none; transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--red); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--white); font-size: 32px; cursor: pointer; padding: 8px; }
+
+    /* Previous competitions highlight */
+    .comp-highlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .comp-highlight {
+      background: var(--dark-2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 8px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .comp-highlight::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--orange));
+    }
+    .comp-highlight-year {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 56px;
+      line-height: 1;
+      color: rgba(255,255,255,0.06);
+      position: absolute;
+      right: 16px;
+      top: 12px;
+    }
+    .comp-highlight h4 {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    .comp-highlight p {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+    @media (max-width: 600px) { .comp-highlight-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="page-enter">
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="racing.html">Autonomous Racing</a>
+  <a href="search-rescue.html">Search &amp; Rescue</a>
+  <a href="healthcare.html">Healthcare</a>
+  <a href="sponsors.html">Sponsors</a>
+</div>
+
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="assets/logo-wide.png" alt="RoboNotts" /></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown">
+      <a href="#" class="active">Teams</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="racing.html">🏎️ Autonomous Racing</a></li>
+        <li><a href="search-rescue.html">🔍 Search &amp; Rescue</a></li>
+        <li><a href="healthcare.html">🏥 Healthcare</a></li>
+      </ul>
+    </li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+    <li><a href="mailto:info@robonotts.com" class="btn btn-primary" style="margin-left:8px;padding:10px 22px;font-size:12px;">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<div class="team-hero" style="background: var(--black); min-height: 60vh; display:flex; align-items:center; position:relative;">
+  <div class="health-hero-bg"></div>
+  <div class="pulse-ring" style="width:300px;height:300px;right:10%;top:15%;"></div>
+  <div class="pulse-ring" style="width:200px;height:200px;right:15%;top:25%;animation-delay:2s;"></div>
+
+  <div class="team-hero-content" style="width:100%;">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="#">Teams</a>
+      <span class="breadcrumb-sep">/</span>
+      <span style="color:var(--white);">Healthcare</span>
+    </div>
+    <span class="team-hero-tag">🏥 Team 03</span>
+    <h1 style="font-family:'Bebas Neue',sans-serif; font-size:clamp(60px,9vw,120px); line-height:0.92; letter-spacing:0.02em; margin-bottom:28px;">
+      Healthcare<br><span style="color:var(--red);">Robotics</span>
+    </h1>
+    <p class="team-hero-desc">Building dependable assistive robots that support patients, clinicians, and carers — bringing intelligent automation to where it matters most: human health.</p>
+  </div>
+</div>
+
+<div class="red-divider"></div>
+
+<!-- DESCRIPTION -->
+<section class="team-desc-section">
+  <div class="container">
+    <div class="team-desc-grid">
+      <div class="desc-text" data-reveal>
+        <p class="section-label">What We Do</p>
+        <h2>Technology That Cares</h2>
+        <p>The Healthcare team — the founding heart of RoboNotts — develops assistive robotic systems designed for real clinical and care environments. Our robot, Happy, has competed on the world stage at ICRA and HEART-MET, benchmarked against international teams in physically assistive robotics.</p>
+        <p>Happy is built to support patients with reduced mobility: navigating hospital ward environments autonomously, assisting with object manipulation tasks, and interacting safely with human occupants through natural gesture and voice-based communication.</p>
+        <p>We combine manipulation, navigation, and human-robot interaction in a single cohesive system — and we rigorously test it against real-world benchmarks, not just lab conditions. Our work directly builds on the University of Nottingham's strengths in healthcare technology research.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">ROS2</span>
+          <span class="tech-tag">Robot Manipulation</span>
+          <span class="tech-tag">HRI</span>
+          <span class="tech-tag">Navigation</span>
+          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">Gesture Recognition</span>
+          <span class="tech-tag">Machine Learning</span>
+        </div>
+      </div>
+      <div class="desc-highlights" data-reveal>
+        <div class="highlight-card">
+          <h4>🦾 Physical Assistance</h4>
+          <p>Robotic manipulation systems enabling Happy to fetch, carry, and interact with everyday objects — supporting patients who have limited upper-body mobility.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🧭 Ward Navigation</h4>
+          <p>Autonomous navigation in dynamic indoor environments, safely operating around patients, staff, and furniture without pre-mapped routes.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🤝 Human-Robot Interaction</h4>
+          <p>Natural interaction through facial recognition, gesture detection, and voice commands — ensuring Happy can be used by anyone, not just technical operators.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🏆 International Competition</h4>
+          <p>Competed at ICRA 2023 and HEART-MET 2022, validating our system against the world's leading student and academic robotics groups.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Competition History for Healthcare -->
+    <div data-reveal style="margin-top: 60px;">
+      <p class="section-label" style="margin-bottom: 16px;">Competition History</p>
+      <div class="comp-highlight-grid">
+        <div class="comp-highlight">
+          <div class="comp-highlight-year">2023</div>
+          <h4>ICRA 2023 — METRICS HEART-MET</h4>
+          <p>Physically Assistive Robot Challenge at the International Conference on Robotics and Automation. May 29 – June 1, 2023.</p>
+        </div>
+        <div class="comp-highlight">
+          <div class="comp-highlight-year">2022</div>
+          <h4>HEART-MET 2022</h4>
+          <p>Healthcare Robotics Technologies Competition. October 2–5, 2022. Our first international competition appearance with Happy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM MEMBERS -->
+<section class="members-section">
+  <div class="container">
+    <p class="section-label">The People</p>
+    <h2 class="section-title">Healthcare Team<br>Members</h2>
+    <p style="color:var(--gray); font-size:14px; margin-top:-8px; max-width:500px;">Team member photos and bios — add your details below to populate each card.</p>
+
+    <div class="members-grid">
+      <div class="member-card" data-reveal data-reveal-delay="1">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Team Lead</div>
+          <div class="member-role">Team Captain</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="2">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Robot Manipulation</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="3">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Navigation</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="4">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">ML &amp; Computer Vision</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="1">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Human-Robot Interaction</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="2">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Lead Developer</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="3">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Marketing &amp; Comms</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+      <div class="member-card" data-reveal data-reveal-delay="4">
+        <div class="member-photo"><div class="member-photo-placeholder"><div class="member-photo-icon">👤</div><div class="member-photo-text">Photo</div></div></div>
+        <div class="member-info">
+          <div class="member-name">Member Name</div>
+          <div class="member-role">Hardware Engineer</div>
+          <p class="member-bio">Add bio here.</p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top: 28px; font-size:12px; color:var(--gray);">
+      To add a real photo: replace <code>.member-photo-placeholder</code> with <code>&lt;img src="path/to/photo.jpg" style="width:100%;height:100%;object-fit:cover;"&gt;</code>
+    </p>
+  </div>
+</section>
+
+<!-- BACK CTA -->
+<section style="background:var(--dark); padding:60px 48px; text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray); font-size:14px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:20px;">Explore More</p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="racing.html" class="btn btn-outline">🏎️ Autonomous Racing</a>
+      <a href="search-rescue.html" class="btn btn-outline">🔍 Search &amp; Rescue</a>
+      <a href="index.html" class="btn btn-primary">← Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo-wide.png" alt="RoboNotts" />
+      <p class="footer-tagline">Student-led robotics research and competition team at the University of Nottingham.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Teams</p>
+      <ul class="footer-links">
+        <li><a href="racing.html">Autonomous Racing</a></li>
+        <li><a href="search-rescue.html">Search &amp; Rescue</a></li>
+        <li><a href="healthcare.html">Healthcare</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Organisation</p>
+      <ul class="footer-links">
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Follow Us</p>
+      <ul class="footer-links">
+        <li><a href="https://www.instagram.com/happy_therobot/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@happy_therobot" target="_blank">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 RoboNotts — University of Nottingham</span>
+    <span>Healthcare Team</span>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('revealed'); observer.unobserve(e.target); }}), { threshold: 0.1 });
+  document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
